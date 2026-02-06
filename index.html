@@ -16,16 +16,9 @@
 
         body {
             font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: 
-                linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, transparent 100%),
-                repeating-linear-gradient(
-                    90deg,
-                    #b8bcc4 0px,
-                    #c5c9d1 1px,
-                    #bec2ca 2px,
-                    #c8ccd4 3px
-                ),
-                linear-gradient(180deg, #c0c4cc 0%, #d0d4dc 50%, #c0c4cc 100%);
+            background: url('safekuk_background.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -34,7 +27,7 @@
             position: relative;
         }
 
-        /* Enhanced brushed metal texture */
+        /* Subtle overlay for depth */
         body::before {
             content: '';
             position: absolute;
@@ -42,21 +35,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
-                repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 1px,
-                    rgba(255, 255, 255, 0.03) 1px,
-                    rgba(255, 255, 255, 0.03) 2px
-                ),
-                repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 100px,
-                    rgba(0, 0, 0, 0.02) 100px,
-                    rgba(0, 0, 0, 0.02) 101px
-                );
+            background: rgba(0, 0, 0, 0.02);
             pointer-events: none;
         }
 
@@ -85,10 +64,10 @@
         }
 
         .logo {
-            max-width: 500px;
-            width: 90vw;
+            max-width: 450px;
+            width: 85vw;
             height: auto;
-            filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
         }
 
         .coming-soon {
@@ -157,7 +136,7 @@
 <body>
     <div class="container">
         <div class="logo-wrapper">
-            <img src="safekuk_logo_v2.png" alt="Safekuk Logo" class="logo">
+            <img src="safe-removebg_v2.png" alt="Safekuk Logo" class="logo">
         </div>
         <h1 class="coming-soon">Coming Soon</h1>
     </div>
